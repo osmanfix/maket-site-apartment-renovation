@@ -379,6 +379,7 @@ h3 {
     color: #E3B873;
     text-decoration: none;
     list-style-type: none;
+    border-bottom: 1px solid #E3B873;
     
 }
 
@@ -444,9 +445,15 @@ h3 {
 }
 
 .buttom-play {
-    position: relative;
+    position: absolute;
+    margin: 174px 364px;
 
 }
+
+.video-play {
+    filter: brightness(40%)
+}
+
 
 .line-body {
     display: flex;
