@@ -61,7 +61,7 @@ img{
     opacity: 1;
 }
 
-@media screen and (max-width: 1069px) {
+@media screen and (max-width: 1300px) {
     nav{
         display: none;
     }
@@ -92,9 +92,7 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-    .header-content{
-        
-    }
+
     nav{
         display: none;
     }
@@ -146,7 +144,7 @@ h3 {
     color: #E3B873;
 }
 
-@media screen and (max-width: 1069px) {
+@media screen and (max-width: 1300px) {
     .number-call  {
         color: #FFFFFF;
         margin-right: 18px;
@@ -231,6 +229,10 @@ h3 {
     height: 105px;
 }
 
+.hero-title-button{
+    height: 51px;
+    width: 457px;
+}
 
 @media screen and (max-width:  768px) {
     .title  {
@@ -304,7 +306,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .calculate {
-        width: 100%;
+        width: 338px;
     }
 }
 
@@ -372,8 +374,8 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .project-title {
+        margin: 0px auto 22px;
         text-align: center;
-        margin-top: 0px;
     }
 }
 
@@ -389,6 +391,7 @@ h3 {
     color: #FFFFFF;
     height: 86px;
     width: 442px;
+    text-align: center;
 }
 @media screen and (max-width: 768px) {
     .parametr {
@@ -719,7 +722,7 @@ h3 {
     line-height: 23px;
     color: #363636;
     border: none;
-    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    border-bottom: 1px solid #fff;
     background-color: transparent;
     color: inherit;
     outline: none;    
@@ -741,7 +744,7 @@ h3 {
     .form-feedback label{
     font-size: 13px;
     line-height: 21px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);;
     }
 }
 
@@ -1294,10 +1297,30 @@ h3 {
 
 
 @media screen and (max-width: 1191px)  {
-    .repair-styles{
+    .example-of-works{
+    display: flex;
+}
+.example-of-works-one{
+    display: none;
+}
+.repair-styles-type-title{
+    display: none;
+}
+.repair-styles-type-view{
     display: none;
 }
 }
+
+@media screen and (max-width: 1191px)  {
+    .repair-style{
+    display: flex;
+}
+.repair-styles{
+    background-image:none;
+    height: 0px; 
+}
+}
+
 
 @media screen and (max-width: 1191px)  {
     .clients{
@@ -1312,12 +1335,26 @@ h3 {
 }
 }
 @media screen and (max-width: 1348px) {
+    .repair-styles-type-block{
+        display: flex;
+    }
     .example-of-works-two{
     display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .repair-styles-type-title{
+        display: flex;
+    }
+    .repair-styles-type-view{
+        display: none;
+    }
+
+
+
+
+
     .example-of-works-two{
     display: none;
     }
@@ -1328,12 +1365,6 @@ h3 {
 
     .example-of-works-revier-two{
         display: none;
-    }
-
-    .example-of-works-mobile{
-        display: flex;
-        position: relative;
-
     }
     .example-of-works-revier-one-mobile{
         height: 242px;
@@ -1905,7 +1936,7 @@ h3 {
     padding: 13px 33px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
     .button-footer { 
         display: none;
 }
