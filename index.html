@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -88,7 +89,7 @@
                             </ul>
                     </div>
                     
-                    <div class="project-photo" id="photos"><img src="./images/rostov.jpg" alt="rostov"></div>
+                    <div class="project-photo" id="photos"><img src="./images/rostov.jpg" width="679px" height="482px" alt="rostov"></div>
                 </div>
                 
             </div>
@@ -117,21 +118,22 @@
                     <div class="form-feedback">
                         <form action="" method="get">
                             <div class="form-feedback-up">
-                                <label for="name">name
+                                <label for="name">Name
                                 <input type="text" name="name" id="name" placeholder="What is your name:" required></label>
                                 <label for="tel">Phone
                                 <input type="tel" name="tel" id="tel" placeholder="Your phone number:" required ></label>
-                                <button type="submit">Submit</button>
-                            </div>
-
-                            <div class="first-checkbox">
-                                <label class="label">
+                                <div id="feedback-button"> <button type="submit" >Submit</button></div>
+                            </div> 
+<div class="form-feedback-but-check">
+                            
+                            <div class="first-checkbox" id="feedback-checkbox">
+                                <label class="text-form-control">
                                   <input type="checkbox" class="checkbox" >
                                   <span class="fake"></span>
                                   <span class="text">I agree to the processing of personal data.</span>
                                 </label>
                             </div>
-
+</div>
                         </form>
                     </div>
                 </div>
@@ -220,6 +222,7 @@
                                     </div>
                                 </div>
 
+                                <div class="form-feedback">
                                 <form class="feedback-form-measuring" action="" method="get">
                                     <span class="feedback-title-form">Leave a request for free departure of the measurer</span>
                                     <div class="input-feedback"> 
@@ -228,8 +231,11 @@
                                         <p>Email</p><input type="email" id="email"  placeholder="Your phone number:" required> 
                                     </div>
                                     <div class="feedback-checkbox">
-                                            <label><input type="checkbox" required>I agree to the processing of personal data</label>
-                                    </div>
+                                        <div class="first-checkbox">
+                                            <label class="label">
+                                              <input type="checkbox" class="checkbox" >
+                                              <span class="fake"></span>
+                                              <span class="text">I agree to the processing of personal data.</span>                                    </div>
                                     <div class="feedback-submit">
                                         <button type="submit" class="feedback-form-measuring-subit">Call the measurer</button>
                                     </div>
@@ -237,6 +243,7 @@
                                         <img src="./images/cash.svg" alt="cash" height="72px" width="72px"> Help save 10 - 20% of the cost of materials
                                     </div>
                                 </form>
+                            </div>
                         </div>
                 </div>
             </div>
@@ -266,13 +273,19 @@
                             
                             <div class="example-of-works">
                                     <div class="example-of-works-one">
-                                        <img src="./images/view-revier-one.jpg" >
-                                        <img src="./images/view-revier-two.jpg">
+                                        
+                                        <img src="./images/view-revier-one.jpg" class="example-of-works-revier-one">
+                                        <img src="./images/view-revier-two.jpg" class="example-of-works-revier-two">
                                     </div>
                                 
                                     <div class="example-of-works-two">
-                                        <img src="./images/view-revier-three.jpg" >
-                                        <img src="./images/view-revier-four.jpg">
+                                        <img src="./images/view-revier-three.jpg" class="example-of-works-revier-three" >
+                                        <img src="./images/view-revier-four.jpg" class="example-of-works-revier-four">
+                                    </div>
+                                    <div class="example-of-works-mobile">
+                                    <img src="./images/left.svg" alt="кнопка старта" class="back-button">
+                                    <img src="./images/fon-styles-repair.jpg" class="example-of-works-revier-one-mobile">
+                                    <img src="./images/right.svg" alt="кнопка старта" class="forward-button">
                                     </div>
                             </div>
 
@@ -333,32 +346,34 @@
 
         </section>
 
-<section class="questions-feedback">
-        <div class="conteiner questions-feedback-conteiner">
-                <div class="questions-feedback-form">
-                     <form action="" get="">
-                            <h3 class="questions-feedback-title"> have any questions?</h3>
-                            <div class="questions-feedback-n-p"> 
-                                <label>Name
-                                <input type="name" id="name" placeholder="What is your name:" required></label>
-                                <label>Phone
-                                <input type="tel" id="tel" placeholder="Your phone number:" required></label>
-                            </div>
-                            <div class="questions-feedback-q">
-                                <label>Question<input type="text" id="question" placeholder="I want to know:" required></label> 
-                            </div>
-                            <div class="questions-feedback-sumbit">
-                                <div class="first-checkbox">
-                                    <label class="label">
-                                      <input type="checkbox" class="checkbox" >
-                                      <span class="fake"></span>
-                                      <span class="text">I agree to the processing of personal data.</span>
-                                    </label>
+
+        <section class="questions-feedback">
+            <div class="conteiner questions-feedback-conteiner">
+                    <div class="questions-feedback-form">
+                         <form action="" get="">
+                                <h3 class="questions-feedback-title"> have any questions?</h3>
+                                <div class="questions-feedback-n-p"> 
+                                    <label>Name
+                                    <input type="name" id="name" placeholder="What is your name:" required></label>
+                                    <label>Phone
+                                    <input type="tel" id="tel" placeholder="Your phone number:" required></label>
                                 </div>
-                                <button type="submit" class="questions-sumbit-button">Submit</button>
-                            </div>
-                    </form>
-                </div>       
+                                <div class="questions-feedback-q">
+                                    <label>Question<input type="text" id="question" placeholder="I want to know:" required></label> 
+                                </div>
+                                <div class="questions-feedback-sumbit">
+                                    <div class="first-checkbox">
+                                        <label class="label">
+                                          <input type="checkbox" class="checkbox" >
+                                          <span class="fake"></span>
+                                          <span class="text">I agree to the processing of personal data.</span>
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="questions-sumbit-button">Submit</button>
+                                </div>
+                        </form>
+                    </div>       
+                              
                        
 
 
@@ -372,19 +387,19 @@
 
 
                             
-                            <div class="questions-adress">
+                            <div class="questions-adress" id="adress">
                                 <label>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</label>
                             </div>
                             
-                            <div class="questions-contacts">
+                            <div class="questions-contacts" id="questions-contact-icon">
                                 <div class="questions-icon"><img src="./images/mail-icon.svg" height="11px" width="14px"></div>
                                 <div class="questions-icon"><img src="./images/instagram-icon.svg" height="12px" width="12px"></div>
                             </div>
-                            <div class="questions-maps">
-                                <img src="./images/maps.jpg">
+                            <div class="questions-maps" id="maps">
+                                <img src="./images/maps.jpg" class="questions-maps-pc">
+                                <img src="./images/maps-mobile.png" class="questions-maps-mobile">
                             </div>               
-        </div>
-
+                        </div>
 <div class="questions-overlay"></div>
 
 
@@ -405,7 +420,7 @@
                 IC "Repair Design Project"
             </div>
             <nav>
-                <ul class="header-navigation">
+                <ul class="footer-navigation">
                     <li><a>HOME</a></li>
                     <li><a>PROJECTS</a></li>
                     <li><a>MEASUREMENT</a></li>
