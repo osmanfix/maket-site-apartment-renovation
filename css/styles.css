@@ -14,8 +14,6 @@
     font-display: swap;
 }
 
-
-
 body {
     margin: 0 auto;
 }
@@ -24,6 +22,8 @@ body {
 body * {
     box-sizing: border-box;
 }
+
+
 
 img{
     max-width: 100%;
@@ -92,7 +92,8 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-
+    .header-content{
+    }
     nav{
         display: none;
     }
@@ -206,7 +207,7 @@ h3 {
     .hero-conteiner {
     padding: 85px 18px 41px 18px;
     height: 60px;
-    width: 339px;
+    width: auto;
     }
 }
 
@@ -231,20 +232,20 @@ h3 {
 
 .hero-title-button{
     height: 51px;
-    width: 457px;
 }
 
 @media screen and (max-width:  768px) {
     .title  {
         font-size: 23px;
         line-height: 31px;
-        width: 339px;
         height:60px;
+        width: auto;
     }
 
     .hero-title-button{
-        margin-right: 18px;
         margin-top: 32px;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -270,7 +271,7 @@ h3 {
     font-size: 14px;
     line-height: 19px;
     height: 94px;
-    width: 339px;
+    width: auto;
 }
 }
 
@@ -306,20 +307,14 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .calculate {
-        width: 338px;
+        width: auto;
+        margin-top: 0px;   
     }
 }
-
-
-
-
-
-
 .project {
     background-color: #131313;
     height: 1074px;
     color:#FFFFFF;
-    
 }
 @media screen and (max-width: 768px) {
     .project {
@@ -332,14 +327,12 @@ h3 {
     display: block;
 }
 
-
 .project-conteiner{
     max-width: 1438px;
     margin: 0 auto;
     padding: 107px 134px 414px 134px;   
     display: flex;
 }
-
 
 @media screen and (max-width: 768px) {
     .project-conteiner {
@@ -356,7 +349,6 @@ h3 {
     }
 }
 
-
 .project-title {
     font-family: 'Yeseva One';
     font-style: normal;
@@ -371,16 +363,13 @@ h3 {
     width: 253px;
 }
 
-
 @media screen and (max-width: 768px) {
     .project-title {
         margin: 0px auto 22px;
+        width: auto;
         text-align: center;
     }
 }
-
-
-
 
 .parametr{
     font-family: 'Nunito Sans';
@@ -393,17 +382,15 @@ h3 {
     width: 442px;
     text-align: center;
 }
+
 @media screen and (max-width: 768px) {
     .parametr {
     height: 86px;
-    width:311px;
+    width:auto;
     font-size: 11px;
     line-height: 158.48%;   
     }
 }
-
-
-
 
 .categ{
     display: flex;
@@ -415,7 +402,6 @@ h3 {
 .project-colum h3{
     text-align: start;
 }
-
 
 .project-colum2 h3{
     flex-direction: column;
@@ -432,6 +418,11 @@ h3 {
     display: flex;
 }
 
+@media screen and (max-width: 768px) {
+    .category{    
+    justify-content: center;
+    }
+}
 
 .category h3{
     font-family: 'Yeseva One';
@@ -451,7 +442,6 @@ h3 {
     }
 }
 
-
 .category p{
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -467,11 +457,6 @@ h3 {
     
 }
 }
-
-
-
-
-
 
 .project-switch {
     display: flex;
@@ -517,8 +502,6 @@ h3 {
 
 }
 
-
-
 .project-link a{
     font-family: 'Yeseva One';
     font-style: normal;
@@ -543,8 +526,6 @@ h3 {
     list-style-type: none;
     border-bottom: 1px solid #E3B873;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .project-link {
@@ -571,8 +552,6 @@ h3 {
         height: 710px;
     }
 }
-
-
 
 .control-conteiner {
     max-width: 1438px;
@@ -623,27 +602,23 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-    .player{       height: 207px;
-        width: 340px;
-       margin:0 auto;
+    .player{      
+        height: 207px;
+        margin:0 auto;
     }
 }
 
 @media screen and (max-width: 768px) {
     .video-play{
         height: 207px;
-        width: 340px;
     }
 }
 @media screen and (max-width: 768px) {
     .buttom-play{
        height: 37px;
        width: 37px;
-       margin: 85px 151px;
     }
 }
-
-
 
 .line-body {
     display: flex;
@@ -676,13 +651,11 @@ h3 {
         line-height: 19px;
         margin:21px auto;
         height: 106.95px;
-        width: 340px;
+        width: auto;
         color: #FFFFFF;
+        padding: 0 18px 0;
     }
 }
-
-
-
 
 .form-feedback {
     display: flex;
@@ -698,20 +671,16 @@ h3 {
     }
 }
 
-
-
-
-
-
 .form-feedback-up {
     display: flex;
 }
 @media screen and (max-width: 768px) {
     .form-feedback-up {
        flex-direction: column;
+       justify-content: center;
+    align-items: center;
     }
 }
-
 
 .form-feedback input{
     display: block;
@@ -727,14 +696,12 @@ h3 {
     color: inherit;
     outline: none;    
     margin-right: 49px;
-    width: 231px;
 }
 
 @media screen and (max-width: 768px) {
     .form-feedback input {
     font-size: 14px;
     line-height: 19px;
-    width: 340px;
     margin-bottom: 20px;
     }
     .form-feedback input::placeholder{
@@ -748,8 +715,6 @@ h3 {
     }
 }
 
-
-
 .text-form-control{
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -762,32 +727,11 @@ h3 {
 
 
 
-
-.form-feedback button {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 27px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #E3B873;
-    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
-    border-radius: 2px;
-    border: 0px;
-    padding: 20px 75px 4px 76px;
-}
-
 @media screen and (max-width: 768px) {
     .form-feedback button{
-        width: 340px;
-        margin-left: 0;
+        width: auto;
     }
-    }
-
-
-    
+}
 
 @media screen and (max-width: 768px) {
 .form-feedback span {
@@ -809,26 +753,44 @@ h3 {
     display: none;
 }
 
+.feedback-button-b{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+    border: 0px;
+    padding: 20px 75px 4px 76px;
+}
+
 
 @media screen and (max-width: 768px) {
     .form-feedback-but-check{ 
-        flex-direction: 
-        column; }
+        flex-direction:  column; 
+        margin-top: -170px;
+    }
 
-    #feedback-button { 
+    .feedback-button { 
         margin-top: 99px;
         font-size: 13px;
         line-height: 27px;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
-        }
-    #feedback-checkbox { 
+}
+
+
+    .feedback-checkbox { 
         justify-content: start; 
         margin-top: -290px;
     }
 }
-
 
 .repair-conteiner{
     max-width: 1438px;
@@ -860,9 +822,6 @@ h3 {
     flex-wrap:wrap;
 }
 
-
-
-
 @media screen and (max-width: 768px) {
     .types-of-repairs{
         flex-direction: column;
@@ -872,17 +831,14 @@ h3 {
     }
     .repair-type-back img{
         height: 365px;
-        width: 340px;
+        width: auto;
     }
-
-    }
+}
 
 
 .repair-redecorating-type {
     display: block;
 }
-
-
 
 .repair-type-before{
     margin-top: -150px;
@@ -894,16 +850,16 @@ h3 {
     position: relative;
 }
 
-
 @media screen and (max-width: 768px) {
     .repair-type-before{
         margin-left: -1px;
         margin-top: -164px;
         height:241px;
-        width: 270px;
+        width: auto;
         margin-bottom: 100px;
+        padding-right: 70px;
     }
-    }
+}
 
 .type-repair-title{
     font-family: 'Yeseva One';
@@ -914,7 +870,6 @@ h3 {
     color: #363636;
     padding-top: 25px;
     padding-left: 31px;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -923,7 +878,6 @@ h3 {
     line-height: 21px;
     padding-top: 21px;
     margin-bottom: 10px;
-
     }
 }
 
@@ -941,8 +895,6 @@ h3 {
         line-height: 22px;
     }
 }
-
-
 
 .about-prices{
     background: #E3B873;
@@ -984,8 +936,6 @@ h3 {
     }
 }
 
-
-
 .departure-step {
     display:flex;
     background-image: url('../images/feedback-fon.jpg');
@@ -1004,8 +954,6 @@ h3 {
     height: 473px;
     width: 374px;
 }
-
-
 
 .departure-specialist-points{
     display: flex;
@@ -1028,7 +976,6 @@ h3 {
     margin-right: 5px;
 }
 
-
 .departure-specialist-steps{ 
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -1044,7 +991,6 @@ h3 {
     background: #131313;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
 }
-
 
 .feedback-title-form{ 
     font-family: 'Nunito Sans';
@@ -1220,18 +1166,6 @@ h3 {
     
 }
 
-@media screen and (max-width: 768px) {
-
-    .repair-styles-type-title{
-        font-size: 22px;
-        line-height: 30px;
-        text-align: center;
-        height: 66px;
-        margin-top: 35px;  
-    }
-}
-
-
 
 .repair-styles-type-view{ 
 }
@@ -1291,9 +1225,6 @@ h3 {
 }
 
 
-.example-of-works img{
-    max-width: none;
-}
 
 
 @media screen and (max-width: 1191px)  {
@@ -1346,6 +1277,12 @@ h3 {
 @media screen and (max-width: 768px) {
     .repair-styles-type-title{
         display: flex;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        height: 66px;
+        margin-top: 35px;  
+        width: auto;
     }
     .repair-styles-type-view{
         display: none;
@@ -1368,22 +1305,18 @@ h3 {
     }
     .example-of-works-revier-one-mobile{
         height: 242px;
-        width: 340px;
+        width: auto;
     }
     .back-button{
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
-        height: 36px;
-        width:36px;
         margin-top: 103px;
         margin-left: 14px;
     }
     .forward-button{
         position: absolute;
-        height: 36px;
-        width:36px;
         display: flex;
         margin-top: 103px;
         margin-left: 291px;
@@ -1625,6 +1558,18 @@ h3 {
     margin-bottom: 45px;
 }
 
+@media screen and (max-width: 768px) {
+    .questions-feedback-title{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+
+
+
 
 
 .questions-feedback-n-p {
@@ -1633,7 +1578,10 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .questions-feedback-n-p{
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
     }
 }
 
@@ -1665,7 +1613,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .questions-feedback-n-p input{
-        width: 340px;
+        width: auto;
         margin-bottom: 63px;
     }
 }
@@ -1718,7 +1666,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .questions-feedback-q input{
-        width: 340px;
+        width: auto;
         margin-bottom: 21px;
     }
 }
@@ -1795,7 +1743,7 @@ h3 {
 @media screen and (max-width: 768px) {
     .questions-adress {
         margin: 0 auto;
-        width: 340px;
+        width: auto;
         margin-bottom: 23px;
     }
 }
