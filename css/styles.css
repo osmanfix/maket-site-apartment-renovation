@@ -14,21 +14,36 @@
     font-display: swap;
 }
 
+
+/* Общие стили*/
+
+
 body {
     margin: 0 auto;
 }
-
 
 body * {
     box-sizing: border-box;
 }
 
-
-
 img{
     max-width: 100%;
     height: auto;
 }
+
+h3 {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+/* Чекбокс*/
 
 
 .first-checkbox{
@@ -36,9 +51,6 @@ img{
     justify-content: start;
     align-items: center;
 }
-
-
-
 
 .checkbox{
     display: none;
@@ -61,26 +73,15 @@ img{
     opacity: 1;
 }
 
+
+/* Верхнее меню */
+
+
 @media screen and (max-width: 1300px) {
     nav{
         display: none;
     }
-    
 }
-
-
-
-h3 {
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    
-}
-
 
 .header-content{
     max-width: 1438px;
@@ -92,13 +93,10 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-    .header-content{
-    }
     nav{
         display: none;
     }
 }
-
 
 .header {
     background: #131313;
@@ -116,7 +114,6 @@ h3 {
         margin-left: 18px;
     }
 }
-
 
 .header-navigation {
     list-style:none;
@@ -155,7 +152,6 @@ h3 {
     }
 }
 
-
 .button-header {
     font-family: 'Nunito Sans';
     font-style: italic;
@@ -169,6 +165,10 @@ h3 {
     text-transform: uppercase;
     padding: 13px 33px;
 }
+
+
+/* Первая секция с зоголовком */
+
 
 .hero {
     background-image: url('../images/hero.jpg');
@@ -211,12 +211,6 @@ h3 {
     }
 }
 
-.hero-title-text {
-
-
-
-}
-
 .title{
     margin: 0;
     font-family: 'Yeseva One';
@@ -249,7 +243,6 @@ h3 {
     }
 }
 
-
 .title span {
     color:#E3B873;
 }
@@ -276,7 +269,7 @@ h3 {
 }
 
 
-
+/* Кнопки первой секции */
 
 
 .calculate{ 
@@ -295,7 +288,6 @@ h3 {
     margin-top: 19px;    
     height: 51px;
     width: 207px;
-
 }
 .calculate:hover{
     background: #E3B873;
@@ -304,13 +296,17 @@ h3 {
     border-radius: 2px;
 }
 
-
 @media screen and (max-width: 768px) {
     .calculate {
         width: auto;
         margin-top: 0px;   
     }
 }
+
+
+/* Вторая сеция с проектами */
+
+
 .project {
     background-color: #131313;
     height: 1074px;
@@ -322,9 +318,15 @@ h3 {
     }
 }
 
-
 .projects {
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+    position: absolute;
+    margin-top: 600px;
+    }
 }
 
 .project-conteiner{
@@ -420,19 +422,10 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-    .category{    
+    .category {    
     justify-content: center;
+    margin-top: 290px;
     }
-}
-
-.category h3{
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: #E3B873;
 }
 
 @media screen and (max-width: 768px) {
@@ -440,6 +433,13 @@ h3 {
     font-size: 14px;
     line-height: 19px;
     text-align:start ;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
     }
 }
 
@@ -455,9 +455,12 @@ h3 {
     .category p{
     font-size: 11px;
     line-height: 15px;
-    
 }
 }
+
+
+/* Стрелочки-кружочки */
+
 
 .project-switch {
     display: flex;
@@ -491,6 +494,9 @@ h3 {
     margin-left: 4px;
     width: 5px;
 }
+
+
+/* второй блок с картинками, второй секции */
 
 
 .project-link ul{
@@ -534,12 +540,48 @@ h3 {
     }
 }
 @media screen and (max-width: 768px) {
-    .project-photo img{
+    .back-button-project{
+        position: absolute;
+        margin-top: 103px;
+        margin-left: 14px;
+    }
+    .forward-button-project{
+        position: absolute;
+        padding-top: 103px;
+        padding-left: 291px;
+    }
+    .rostov-project img{
     margin-top: 36px;
     height: 241px;
     width: 340px;
 }
+    .project-ph{
+        height: 241px;
+        width: 340px;
+    }
+    .rostov-project{
+        display: none;
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .project-ph{
+        display: none;
+    }
+    .back-button-project{
+        display: none;
+    }
+    .forward-button-project{
+        display: none;
+    }
+}
+.project-photo-mobile{
+    display: flex
+}
+
+
+/* Третья секция */
+
 
 .control{
     margin-top: -360px;
@@ -581,7 +623,6 @@ h3 {
     height: 1.54px ;
     width: 32px;
 }
-
 
 .player{
     display: flex;
@@ -659,6 +700,10 @@ h3 {
     }
 }
 
+
+/* Обратная связь третьего блока */
+
+
 .form-feedback {
     display: flex;
     justify-content: center;
@@ -672,7 +717,6 @@ h3 {
            margin: 0 auto;
     }
 }
-
 .form-feedback-up {
     display: flex;
 }
@@ -718,7 +762,6 @@ h3 {
     color: rgba(255, 255, 255, 0.5);;
     }
 }
-
 .text-form-control{
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -726,10 +769,7 @@ h3 {
     font-size: 14px;
     line-height: 23px;
     color: #181818;
-    
 }
-
-
 
 @media screen and (max-width: 768px) {
     .form-feedback button{
@@ -745,7 +785,6 @@ h3 {
     margin-top: 21px;
     }
 }
-
 
 .form-feedback-but-check {
     display: flex;
@@ -773,7 +812,6 @@ h3 {
     padding: 20px 75px 4px 76px;
 }
 
-
 @media screen and (max-width: 768px) {
     .form-feedback-but-check{ 
         flex-direction:  column; 
@@ -795,6 +833,10 @@ h3 {
         margin-top: -290px;
     }
 }
+
+
+/* Четвертая секция */
+
 
 .repair-conteiner{
     max-width: 1438px;
@@ -838,7 +880,6 @@ h3 {
         width: auto;
     }
 }
-
 
 .repair-redecorating-type {
     display: block;
@@ -927,6 +968,11 @@ h3 {
     margin-top: -10px;
     }
 }
+
+
+/*  Четвертая сеция, вторая часть с формой */
+
+
 .departure-specialist{
     display: flex;
     margin-top: 152px;
@@ -1038,13 +1084,11 @@ h3 {
     margin-left: 49px;
     margin-right: 49px;
     width: 408px;
-
 }
 
 .input-feedback input::placeholder{
     color: #FFFFFF;  
 }
-
 
 .feedback-checkbox {
     font-family: 'Nunito Sans';
@@ -1084,8 +1128,6 @@ h3 {
     margin-right: 46px;
 }
 
-
-
 .discount {
     display: flex;
     align-items: center;
@@ -1100,6 +1142,9 @@ h3 {
     height:  18px;
     margin-top: 120px;
 }
+
+
+/* Пятая секция со стилями ремнотов */
 
 
 .repair-styles{
@@ -1124,8 +1169,6 @@ h3 {
     flex-direction: column;
     }
 }
-
-
 
 .repair-styles-conteiner {
     max-width: 1438px;
@@ -1154,8 +1197,6 @@ h3 {
     }
 }
 
-
-
 .repair-styles-type-block {
     padding-left: 99px;
 }
@@ -1164,9 +1205,6 @@ h3 {
     padding-left: 0px;
     }
 }
-
-
-
 
 .repair-styles-type-title{  
     font-family: 'Yeseva One';
@@ -1182,22 +1220,11 @@ h3 {
     
 }
 
-
-.repair-styles-type-view{ 
-}
-
-
 @media screen and (max-width: 768px) {
     .repair-styles-type-view{
     display: none;
     }
 }
-
-
-
-
-
-
 .repair-styles-type-view ul{
     padding: 0px;
 }
@@ -1234,14 +1261,15 @@ h3 {
     border-bottom: 1px solid #E3B873;
 }
 
+
+/* Примеры работ, отображение при адаптиве */
+
+
 .example-of-works{
     display: flex;
     justify-content: space-between;
   
 }
-
-
-
 
 @media screen and (max-width: 1191px)  {
     .example-of-works{
@@ -1282,9 +1310,7 @@ h3 {
 }
 }
 @media screen and (max-width: 1348px) {
-    .repair-styles-type-block{
-        display: flex;
-    }
+
     .example-of-works-two{
     display: none;
     }
@@ -1303,11 +1329,6 @@ h3 {
     .repair-styles-type-view{
         display: none;
     }
-
-
-
-
-
     .example-of-works-two{
     display: none;
     }
@@ -1335,16 +1356,12 @@ h3 {
     }
 }
 
-
-
 @media screen and (min-width: 768px) {
     .example-of-works-mobile{
         display: none;
         
     }
 }
-
-
 
 .example-of-works-one{
     margin-top: -41px;
@@ -1374,6 +1391,8 @@ h3 {
 }
 
 
+/* Шестая секция с отзовами клиетов */
+
 
 @media screen and (max-width: 768px) {
     .clients{
@@ -1381,16 +1400,12 @@ h3 {
     }
 }
 
-
-
 .clients-conteiner{
     max-width: 1438px;
     margin: 0 auto;  
     display: block; 
     margin-top: 110px;
 }
-
-
 
 .line-clients{
 	margin: 20px 0;
@@ -1424,7 +1439,6 @@ h3 {
     width: 476px;
     margin: 0 auto;
 }
-
 
 .client {
     width: 376px;
@@ -1485,6 +1499,11 @@ h3 {
     flex-wrap: wrap;
 }
 
+
+
+/* Седьмая секция с обратной связью, картой и обратной связью */
+
+
 @media screen and (max-width: 768px) {
     .questions-feedback{
         background-image: none;
@@ -1497,9 +1516,6 @@ h3 {
         display: none;
     }
 }
-
-
-
 
 .questions-feedback-conteiner{
     max-width: 1438px;
@@ -1519,7 +1535,6 @@ h3 {
     z-index: 0;
 }
 
-
 .questions-feedback{
     background-image: url('../images/questions-feedback-fon.jpg');
     background-size: cover;
@@ -1534,8 +1549,6 @@ h3 {
         height: 100%;
     }
 }
-
-
 
 .questions-feedback-form {
     display: flex;
@@ -1552,10 +1565,6 @@ h3 {
         margin-top:200px;
     }
 }
-
-
-
-
 
 .questions-feedback-title{
     display: block;
@@ -1580,11 +1589,6 @@ h3 {
     }
 }
 
-
-
-
-
-
 .questions-feedback-n-p {
     display: flex;
 }
@@ -1597,7 +1601,6 @@ h3 {
         margin: 0 auto;
     }
 }
-
 
 .questions-feedback-n-p label {
     font-family: 'Nunito Sans';
@@ -1685,7 +1688,6 @@ h3 {
     }
 }
 
-
 @media screen and (max-width: 768px) {
     .questions-feedback-q input::placeholder{
         font-family: 'Nunito Sans';
@@ -1696,7 +1698,6 @@ h3 {
         color: #FFFFFF;
     }
 }
-
 
 .questions-feedback-sumbit{
     display: flex;
@@ -1720,8 +1721,6 @@ h3 {
     }
 }
 
-
-
 .questions-sumbit-button{
     background: #E3B873;
     box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);  
@@ -1735,11 +1734,6 @@ h3 {
         margin-bottom: 129px;
     }
 }
-
-
-
-
-
 
 .questions-adress {
     font-family: 'Yeseva One';
@@ -1782,7 +1776,6 @@ h3 {
     }
 }
 
-
 .questions-contacts {
     display: flex;
     align-items: center;
@@ -1796,9 +1789,6 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-
-
-
 
 @media screen and (max-width: 768px) {
     .questions-maps img{ 
@@ -1819,9 +1809,6 @@ h3 {
     }
 }
 
-
-
-
 #adress { order: 1; }
 #questions-contact-icon { order: 2; }
 #maps { order: 3; }
@@ -1834,6 +1821,7 @@ h3 {
 }
 
 
+/* Футер, нижнее меню */
 
 
 .footer {
