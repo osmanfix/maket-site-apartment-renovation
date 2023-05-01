@@ -1,17 +1,17 @@
 let images =  [{
-    url: "./images/rostov.jpg",
+    url: "/images/rostov.jpg",
     city: "Rostov-on-Don LCD admiral",
     time: "3.5 months",
     apartment: "81 m2",
     cost:"Upon request"
   }, {
-    url: "./images/sochi.jpg",
+    url: "/images/sochi.jpg",
     city: "Sochi Thieves",
     time: "4 months",
     apartment: "105 m2",
     cost:"Upon request"
   }, {
-    url: "./images/rostov-patriotik.png",
+    url: "/images/rostov-patriotik.png",
     city: "Rostov-on-Don Patriotic",
     time: "3 months",
     apartment: "93 m2",
