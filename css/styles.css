@@ -322,12 +322,6 @@ h3 {
     display: block;
 }
 
-@media screen and (max-width: 768px) {
-    .projects {
-    position: absolute;
-    margin-top: 600px;
-    }
-}
 
 .project-conteiner{
     max-width: 1438px;
@@ -344,10 +338,7 @@ h3 {
         align-content: center;
         justify-content: center;
         flex-direction: column;
-        padding-top: 36px;
-        padding-left: 0px;
-        padding-bottom: 0px;
-        padding-right: 0px;
+        padding: 0px;
     }
 }
 
@@ -369,6 +360,7 @@ h3 {
     .project-title {
         width: auto;
         text-align: center;
+        margin-top: 36px;
     }
 }
 
@@ -435,6 +427,7 @@ color:#E3B873;
     .category {    
     justify-content: center;
     margin-top: 290px;
+    height: 190px;
     }
 }
 
@@ -479,11 +472,6 @@ color:#E3B873;
     position: relative;
     top: 10px; 
     margin-top: 50px;
-}
-@media screen and (max-width: 768px) {
-    .project-switch{
-        display: none;
-}
 }
 
 .project-switch-item {
@@ -561,7 +549,6 @@ color:#E3B873;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0px;
   }
   
   .slider__arrow.left {
@@ -619,25 +606,24 @@ color:#E3B873;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 345px;
         height: 100%;
         color: #fff;
       }
       
       .slider__arrow {
-        position: absolute;
         width: 15%;
         height: 100%;
-        font-size: 20px;
+        font-size: 40px;
         text-align: center;
         cursor: pointer;
-        opacity: 0;
-        background: rgba(0, 0, 0, 0.4);
-        transition: opacity 0.4s ease;
         display: flex;
         align-items: center;
         justify-content: center;
-      }
+        margin-top: -390px;
+        margin-left: 5px;
+        z-index: 1;       
+    }
       
       .slider__arrow:hover {
         opacity: 1;
@@ -645,6 +631,7 @@ color:#E3B873;
       
       .slider__arrow.left {
         left: 0;
+
       }
       
       .slider__arrow.right {
@@ -673,6 +660,7 @@ color:#E3B873;
   width: 100%;
 }
 
+
 .slider__dots-item {
   width: 10px;
   height: 10px;
@@ -687,7 +675,7 @@ color:#E3B873;
   background: rgba(255, 255, 255,0.2);
 }
 
-@media screen and (max-width: 638px) {
+@media screen and (max-width: 765px) {
     .slider__dots{
         display: none;
     }
@@ -2090,5 +2078,16 @@ color:#E3B873;
 @media screen and (max-width: 1300px) {
     .button-footer { 
         display: none;
+}
+    .visually-hidden { 
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 630px) {
+
+.project-photo {
+    margin-top: -500px;
 }
 }
