@@ -516,55 +516,64 @@ color:#E3B873;
   height: 482px;
 }
 
-@media screen and (max-width: 768px) {
-.slider__images {
-
-    width: 500px;
-    height: 250px;
-
-  }
-}
 
 .slider__images-title {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  text-align: center;
-  z-index: 1;
-  padding: 7px 0;
-}
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    padding: 7px 0;
+  }
+  
+  .slider__images .image {
+    background-size: cover;
+    background-position: center center;
+    width: 679px;
+    height: 482px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+  }
+  
+  .slider__images .image.active {
+    opacity: 1;
+  }
+  
+  .slider__arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+  
+  .slider__arrow {
+    position: absolute;
+    margin-top: -22px;
+    font-size: 200px;
+    font-size: 38px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider__arrow.left {
+    left: 0;
+  }
+  
+  .slider__arrow.right {
+    right: 0;
+  }
 
-.slider__images .image {
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: opacity 800ms ease;
-}
 
-.slider__images .image.active {
-  opacity: 1;
-}
-
-.slider__arrows {
-  display:flex;
-  flex-direction:  row;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-}
 
 @media screen and (min-width: 768px) {
 .kn2{
@@ -572,10 +581,7 @@ color:#E3B873;
 }
 }
 
-
-
 @media screen and (max-width: 768px) {
-
     .slider__images {
         position: relative;   
         width: 340px;
@@ -644,31 +650,9 @@ color:#E3B873;
       
       .slider__arrow.right {
         right: 0;
-      }
-      
+      }      
 }
 
-.slider__arrow {
-  position: absolute;
-  font-size: 30px;
-  text-align: center;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider__arrow:hover {
-  opacity: 1;
-}
-
-.slider__arrow.left {
-  left: 0;
-}
-
-.slider__arrow.right {
-  right: 0;
-}
 
 
 .project-sw {
