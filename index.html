@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/icon.ico">
     <title>IC "Repair Design Project"</title>
 </head>
 <body>
@@ -53,33 +54,39 @@
                             <h2 class="project-title">Completed projects</h2>
                             <p class="parametr">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
                            <div class="category" id="categorys">
+
                                 <div class="categ">
                                     <div class="project-colum">
                                         <h3>City:</h3>
-                                        <p>Rostov-on-Don <br>LCD admiral</p>
+                                        <div class="city"></div>
                                     </div>
                                     <div class="project-colum">
                                         <h3>Repair time:</h3>
-                                        <p>3.5 months</p>
+                                        <div class="rtime"></div>
                                     </div>
-                                </div> <div class="categ2">
+                                </div> 
+
+                                <div class="categ2">
                                     <div class="project-colum2">
                                         <h3>apartment area:</h3>
-                                        <p>81 m2</p> </div>
+                                        <div  class="area"></div>
+                                    </div>
                                     <div class="project-colum2">    
                                         <h3>Repair Cost:</h3>
-                                        <p>Upon request</p>
-                                </div>   </div></div>
+                                        <div  class="cost"></div>
+                                    </div>   
+                                </div>
+                            </div>
                             
                             <div class="project-switch">
-                                    <img src="./images/left-arrow.svg" width="30" height="30" alt="cтрелка влево"> 
-                                    <div class="project-switch-item"></div>
-                                    <div class="project-switch-item"></div>
-                                    <div class="project-switch-item"></div>
-                                    <img src="./images/right-arrow.svg" width="30" height="30" alt="cтрелка вправо"> 
+                                    <div class="slider__arrows"> 
+                                        <div class="slider__arrow left">&#8592;</div>
+                                            <div class="project-sw"></div>
+                                        <div class="slider__arrow right">&#8594;</div>
+                                    </div>
                                 </div> 
                             </div>
-                
+
                             <div class="projects"  id="projectss">
                                 <div class="project-link">
                                         <ul>
@@ -89,13 +96,13 @@
                                         </ul>
                                 </div>
                             <div class="project-photo" id="photos">
-                                <img src="./images/rostov.jpg" width="679px" height="482px" alt="rostov" class="rostov-project">
-                                
-                                <div class="project-photo-mobile">
-                                    <img src="./images/left.svg" alt="кнопка назад" class="back-button-project">
-                                    <img src="./images/right.svg" alt="кнопка вперед" class="forward-button-project">
-                                    <img src="./images/project.jpg" width="679px" height="482px" alt="project" class="project-ph">
+                                    <div class="slider__images"></div>
+                                     <div class="slider__arrows"> 
+                                        <div class="slider__arrow left"><img src="./images/left.svg" alt="кнопка назад" class="kn2"></div>
+                                        <div class="slider__arrow right"><img src="./images/right.svg" alt="кнопка вперед" class="kn2"></div>
+                                    </div>
                                 </div>
+
                             </div>
                 </div>
                 
@@ -428,5 +435,6 @@
         <button class="button-footer">Request a call</button>
         </div>
     </footer>
+<script src="./js/script.js"></script>
 </body>
 </html>               
