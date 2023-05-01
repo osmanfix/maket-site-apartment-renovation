@@ -547,8 +547,6 @@ color:#E3B873;
   
   .slider__arrows {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     color: #fff;
@@ -563,6 +561,7 @@ color:#E3B873;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 0px;
   }
   
   .slider__arrow.left {
@@ -710,30 +709,38 @@ color:#E3B873;
 
 }
 
-.project-link a{
+.project-link li{
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
+    cursor: pointer;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
     list-style-type: none;
     text-decoration: none;
 }
 
-.project-link a:hover {
+.project-link li:hover {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
+    cursor: pointer;
     text-transform: uppercase;
     color: #E3B873;
     text-decoration: none;
     list-style-type: none;
     border-bottom: 1px solid #E3B873;
 }
+.slider__title.active {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #E3B873;
+    color: #E3B873;
+}
+
 
 @media screen and (max-width: 768px) {
     .project-link {

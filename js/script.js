@@ -22,6 +22,7 @@ let images =  [{
     if (!images || !images.length) return;
         
       options = options || {
+      titles: false, 
       dots: false,
       city: false,
       time: false,
@@ -37,10 +38,12 @@ let images =  [{
     const timeText = document.querySelector(".rtime");
     const apartmentText = document.querySelector(".area");
     const costText = document.querySelector(".cost");
+    const sliderLinks = document.querySelectorAll(".slider__title")
 
     initImages();
     initArrows();
-
+    initEventOnLinks();
+    changeTitle(0);
     
     if(options.dots){
       initDots();
@@ -87,13 +90,14 @@ let images =  [{
     function moveSlider(num) {
       sliderImages.querySelector(".active").classList.remove("active");
       sliderImages.querySelector(`.n${num}`).classList.add("active");
-
+      
+      if (options.titles) changeTitle(num);
          
     if (options.dots) {
       let dotsWrapper = document.querySelector(".slider__dots");
       dotsWrapper.querySelector(".active").classList.remove("active");
       dotsWrapper.querySelector(`.n${num}`).classList.add("active");
-    }
+    }    
 
 
     if (options.city) {
@@ -136,8 +140,22 @@ let images =  [{
       }
     }
 
+
   }
 
+
+  function initEventOnLinks(){
+  sliderLinks.forEach((link, index) => {
+    link.addEventListener("click", function() { 
+      moveSlider(index);   
+    })
+  })
+}
+ 
+  function changeTitle(num) {
+    document.querySelector('.slider__title.active')?.classList.remove('active');    
+    sliderLinks[num].classList.add('active')
+  }
 
   function initDots() {
     let dotsWrapper = document.createElement("div");
@@ -153,8 +171,6 @@ let images =  [{
     });
     sliderWrapper.appendChild(dotsWrapper);
   }
-
-
 
   function initCity() {
     let cityHTML = `<div class="city">${images[0].city}</div>`;
@@ -181,6 +197,7 @@ let images =  [{
  
   document.addEventListener("DOMContentLoaded", () => {
     let sliderOptions = {
+      titles: true,
       dots: true,
       city: true,
       time: true,
